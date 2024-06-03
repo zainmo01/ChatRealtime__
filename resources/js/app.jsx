@@ -25,5 +25,4 @@ createInertiaApp({
 });
 window.Echo.channel("messanger").listen("MessageSent", (e) => {
     console.log("New message received:", e.message);
-    // Code to update your chat UI with the new message
 });
