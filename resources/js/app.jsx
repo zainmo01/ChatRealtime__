@@ -23,6 +23,7 @@ createInertiaApp({
         color: "#4B5563",
     },
 });
-Echo.channel(`messanger`).listen("MessageSent", (e) => {
-    console.log(e);
+window.Echo.channel("messanger").listen("MessageSent", (e) => {
+    console.log("New message received:", e.message);
+    // Code to update your chat UI with the new message
 });

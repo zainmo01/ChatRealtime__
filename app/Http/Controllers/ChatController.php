@@ -12,4 +12,5 @@ class ChatController extends Controller
     {
         return Inertia::render('Chat/Chat');
     }
+
 }
