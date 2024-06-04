@@ -23,6 +23,6 @@ createInertiaApp({
         color: "#4B5563",
     },
 });
-window.Echo.channel("messanger").listen("MessageSent", (e) => {
-    console.log("New message received:", e.message);
+window.Echo.channel("messenger").listen("MessageSent", (e) => {
+    console.log("Great:", e.message);
 });
