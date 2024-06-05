@@ -58,6 +58,6 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 
-    Route::get('chat', [ChatController::class , 'index'])
+    Route::get('Chat', [ChatController::class , 'index'])
                 ->name('chat.index');
 });
