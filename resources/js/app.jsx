@@ -23,25 +23,25 @@ createInertiaApp({
         color: "#4B5563",
     },
 });
-Echo.private("messenger").listen("MessageSent", (e) => {
+Echo.private("messenger.1.2").listen("MessageSent", (e) => {
     console.log("Great:", e);
     console.log("Great:", e.message);
 });
 
-Echo.join(`group_chat.1`)
-    .here((users) => {
-        console.log("Current users:", users);
-    })
-    .joining((user) => {
-        console.log(user.name + " has joined the channel.");
-    })
-    .leaving((user) => {
-        console.log(user.name + " has left the channel.");
-    })
-    .listen("GroupChatMessage", (e) => {
-        console.log("Great:", e);
-        console.log("Great:", e.message);
-    })
-    .error((error) => {
-        console.log(error);
-    });
+// Echo.join(`group_chat.1`)
+//     .here((users) => {
+//         console.log("Current users:", users);
+//     })
+//     .joining((user) => {
+//         console.log(user.name + " has joined the channel.");
+//     })
+//     .leaving((user) => {
+//         console.log(user.name + " has left the channel.");
+//     })
+//     .listen("GroupChatMessage", (e) => {
+//         console.log("Great:", e);
+//         console.log("Great:", e.message);
+//     })
+//     .error((error) => {
+//         console.log(error);
+//     });

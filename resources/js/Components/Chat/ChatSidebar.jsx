@@ -41,12 +41,8 @@ function ChatSidebar({ recentMessages }) {
                         </div>
 
                         <div>
-                            <h3 className="text-md text-violet-500">
-                                {user.name.length > 0 ? user.name : "N/A"}
-                            </h3>
-                            <p className="h-5 overflow-hidden text-sm font-light text-gray-400">
-                                {user.message}
-                            </p>
+                            <h3 className="text-md text-violet-500"></h3>
+                            <p className="h-5 overflow-hidden text-sm font-light text-gray-400"></p>
                         </div>
                     </Link>
                 ))}

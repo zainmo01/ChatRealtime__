@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('messenger', function ($user, $id) {
+Broadcast::channel('messenger.{sender}.{receiver}', function ($user, $id) {
     return !is_null($user);
 });
 
