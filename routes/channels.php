@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Broadcast;
 
 /*
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Broadcast;
 Broadcast::channel('messenger', function ($user, $id) {
     return !is_null($user);
 });
+
+Broadcast::channel('group_chat.{roomId}', function ($user,$roomId) {
+    if(true){
+        return ['id' => $user->id, 'name' => $user->name];
+
+    }
+});
+
