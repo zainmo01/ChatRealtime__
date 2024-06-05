@@ -1,4 +1,4 @@
-import { useForm } from "@inertiajs/inertia-react";
+import { useForm } from "@inertiajs/react";
 import TextInput from "../TextInput";
 
 function ChatInput({ receiver }) {
